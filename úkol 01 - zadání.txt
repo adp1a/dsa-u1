@@ -1,0 +1,20 @@
+Úkol #01:
+
+Nepoužívat žádnou knihovní funkci, pouze vlastní implementace zadaného problému.
+
+Navrhněte a implementuje zadaný problém, do komentáře v těle metody uveďte vyjádření složitosti implementovaného algoritmu. 
+i.	Výpočet faktoriálu čísla nerekurzivním způsobem. 
+ii.	Výpočet mocniny čísla nerekurzivním způsobem. 
+iii.	Výpočet mocniny čísla rekurzivním způsobem.
+iv.	Zjištění počtu kladných nenulových čísel v poli hodnot. 
+Doplňte připravené metody v přiloženém projektu, v modulu CislaOperace. V implementaci není povoleno používat žádnou knihovní funkci, pouze využít vlastní realizace (implementace) problému. V hlavním programu, každý algoritmus ověřte nad všemi případy a vyhodnoťte složitost. 
+Vyhodnocení složitosti uveďte do komentáře v těle metody. 
+
+Program po spuštění zobrazí identifikátor týmu a jména studentů týmu a jejich loginy. Následuje otestování metod.
+
+Odevzdejte v zip-souboru složku Ukol-01 obsahující
+-	Projekt 
+-	Soubor CislaOperace.cpp
+-	ukol_projekt.cpp (soubor s hlavní funkcí, kde jsou uvedeny testovací případy)
+Odevzdání dle specifikace. 
+
