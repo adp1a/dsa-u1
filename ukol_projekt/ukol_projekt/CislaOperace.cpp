@@ -8,12 +8,8 @@ CislaOperace::~CislaOperace() { }
 // ----------------------------------------------------------------
 // Domaci ukol:
 
-// utils
-int absInt(int n) {
-	return (n > 0) ? n : -n;
-}
-
 // vypocet faktorialu cisla n nerekurzivnim zpusobem
+// O(n)
 int CislaOperace::faktorialNerek(int n)
 {
 	int res = n;
@@ -26,8 +22,12 @@ int CislaOperace::faktorialNerek(int n)
 }
 
 // vypocet m-te mocniny cisla c rekurzivnim zpusobem
+// O(n)
 int CislaOperace::mocninaR(int c, int m)
 {
+	if (m < 0) {
+		throw std::runtime_error("Mocnina (m) musi byt veci nez nula");
+	}
 	if (m == 0) {
 		return 1;
 	}
@@ -36,8 +36,13 @@ int CislaOperace::mocninaR(int c, int m)
 }
 
 // vypocet m-te mocniny cisla c nerekurzivnim zpusobem
+// O(n)
 int CislaOperace::mocninaNerek(int c, int m)
 {
+	if (m < 0) {
+		throw std::runtime_error("Mocnina (m) musi byt veci nez nula");
+	}
+
 	int res = 1;
 
 	for (int i = 0; i < m; i++) {
@@ -48,6 +53,7 @@ int CislaOperace::mocninaNerek(int c, int m)
 }
 
 // zjisteni poctu kladnych cisel (nenulovych) v poli hodnot o velikosti n
+// O(n)
 int CislaOperace::zjistiPocetKladnych(int *hodnoty, int n)
 {
 	int qty = 0;
